@@ -3,7 +3,7 @@
 /*
   Gabriel Antonio Neri Reyes
   222559699
-  Programación Estructurada:
+  Programación Estructurada: 
   Arreglos 1
 */
 
