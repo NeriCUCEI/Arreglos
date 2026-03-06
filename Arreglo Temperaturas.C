@@ -17,4 +17,4 @@ int main() {
         printf("\nTemperatura %d = %f\n Puntero %d: %p. ", i, Temperaturas[i], i, &Temperaturas[i]);
     }
     return 0;
-}
+} 
