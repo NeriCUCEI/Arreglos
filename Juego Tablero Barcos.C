@@ -4,7 +4,7 @@
 void Crear_Tablero(int filas, int columnas, int Tablero[]) {
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
-           Tablero[i][j] = 0;
+           Tablero[i][j] = 0; 
         }
     }
 }
