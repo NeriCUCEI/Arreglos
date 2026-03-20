@@ -28,9 +28,20 @@ void Configurar_Tablero(char Tablero[5][5]) {
     }
 }
 
+void Escribir_archivo(FILE *archivo, char Tablero[5][5]) {
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			fprintf(archivo, "[%c]", Tablero[i][j]);
+		}
+		fprintf(archivo, "\n");
+	}
+}
+
 int main() {
     FILE *archivo; char Tablero[5][5];
     archivo = fopen("tablero.txt", "w");
-    Configurar_Tablero(Tablero);
+    Crear_Tablero(Tablero);
     Mostrar_Tablero(Tablero);
+    Escribir_archivo(archivo, Tablero);
+    fclose(archivo);
 }
