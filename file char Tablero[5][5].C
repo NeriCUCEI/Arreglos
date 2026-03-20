@@ -44,4 +44,5 @@ int main() {
     Mostrar_Tablero(Tablero);
     Escribir_archivo(archivo, Tablero);
     fclose(archivo);
+    return 0;
 }
